@@ -3,14 +3,16 @@ tec_cui_ai_power_button_effect = {
 		exists = FROM
 		FROM = {
 			tec_is_aiauth_empire = yes
-			has_global_flag = tec_allow_cui
 		}
 	}
 	allow = {
 		always = yes
 	}
 	effect = {
-		custom_tooltip = tec_cui_ai_power_effect
+		FROM = {
+			custom_tooltip = tec_cui_ai_power_effect
+		}
+
 	}
 }
 
@@ -19,22 +21,24 @@ tec_cui_aiuth_fragment_admiral_button_effect = {
 		exists = FROM
 		FROM = {
 			tec_is_aiauth_empire = yes
-			has_global_flag = tec_allow_cui
 		}
 	}
 	allow = {
-		tec_country_aiauth_has_enough_unity_to_fragment = yes
-		custom_tooltip = {
-			fail_text = tec_cui_aiauth_fragmenting_node
-			NOT = { has_country_flag = tec_fragmenting_node }
+		exists = FROM
+		FROM = {
+			tec_country_aiauth_has_enough_unity_to_fragment = yes
+			custom_tooltip = {
+				fail_text = tec_cui_aiauth_fragmenting_node
+				NOT = { has_country_flag = tec_fragmenting_node }
+			}
 		}
 	}
 	effect = {
-		print_scope_effect = yes
-		custom_tooltip = tec_cui_aiuth_fragment_admiral_effect
-		custom_tooltip = tec_cui_aiauth_fragmenting_cost_effect
-		hidden_effect = {
-			from = {
+		FROM = {
+			print_scope_effect = yes
+			custom_tooltip = tec_cui_aiuth_fragment_admiral_effect
+			custom_tooltip = tec_cui_aiauth_fragmenting_cost_effect
+			hidden_effect = {
 				tec_country_fragment_aiauth_node_cost = yes
 				tec_country_create_aiauth_councilor = {
 					CLASS = admiral
@@ -71,22 +75,23 @@ tec_cui_aiuth_fragment_general_button_effect = {
 		exists = FROM
 		FROM = {
 			tec_is_aiauth_empire = yes
-			has_global_flag = tec_allow_cui
 		}
 	}
 	allow = {
-		tec_country_aiauth_has_enough_unity_to_fragment = yes
-		custom_tooltip = {
-			fail_text = tec_cui_aiauth_fragmenting_node
-			NOT = { has_country_flag = tec_fragmenting_node }
+		exists = FROM
+		FROM = {
+			tec_country_aiauth_has_enough_unity_to_fragment = yes
+			custom_tooltip = {
+				fail_text = tec_cui_aiauth_fragmenting_node
+				NOT = { has_country_flag = tec_fragmenting_node }
+			}
 		}
 	}
 	effect = {
-		custom_tooltip = tec_cui_aiuth_fragment_general_effect
-		custom_tooltip = tec_cui_aiauth_fragmenting_cost_effect
-		hidden_effect = {
-			from = {
-				
+		FROM = {
+			custom_tooltip = tec_cui_aiuth_fragment_general_effect
+			custom_tooltip = tec_cui_aiauth_fragmenting_cost_effect
+			hidden_effect = {
 				tec_country_create_aiauth_councilor = {
 					CLASS = general
 					NAME = councilor_tec_aiauth_fragment_general
@@ -122,21 +127,23 @@ tec_cui_aiuth_fragment_governor_button_effect = {
 		exists = FROM
 		FROM = {
 			tec_is_aiauth_empire = yes
-			has_global_flag = tec_allow_cui
 		}
 	}
 	allow = {
-		tec_country_aiauth_has_enough_unity_to_fragment = yes
-		custom_tooltip = {
-			fail_text = tec_cui_aiauth_fragmenting_node
-			NOT = { has_country_flag = tec_fragmenting_node }
+		exists = FROM
+		FROM = {
+			tec_country_aiauth_has_enough_unity_to_fragment = yes
+			custom_tooltip = {
+				fail_text = tec_cui_aiauth_fragmenting_node
+				NOT = { has_country_flag = tec_fragmenting_node }
+			}
 		}
 	}
 	effect = {
-		custom_tooltip = tec_cui_aiuth_fragment_governor_effect
-		custom_tooltip = tec_cui_aiauth_fragmenting_cost_effect
-		hidden_effect = {
-			from = {
+		FROM = {
+			custom_tooltip = tec_cui_aiuth_fragment_governor_effect
+			custom_tooltip = tec_cui_aiauth_fragmenting_cost_effect
+			hidden_effect = {
 				tec_country_create_aiauth_councilor = {
 					CLASS = governor
 					NAME = councilor_tec_aiauth_fragment_governor
@@ -171,21 +178,23 @@ tec_cui_aiuth_fragment_scientist_button_effect = {
 		exists = FROM
 		FROM = {
 			tec_is_aiauth_empire = yes
-			has_global_flag = tec_allow_cui
 		}
 	}
 	allow = {
-		tec_country_aiauth_has_enough_unity_to_fragment = yes
-		custom_tooltip = {
-			fail_text = tec_cui_aiauth_fragmenting_node
-			NOT = { has_country_flag = tec_fragmenting_node }
+		exists = FROM
+		FROM = {
+			tec_country_aiauth_has_enough_unity_to_fragment = yes
+			custom_tooltip = {
+				fail_text = tec_cui_aiauth_fragmenting_node
+				NOT = { has_country_flag = tec_fragmenting_node }
+			}
 		}
 	}
 	effect = {
-		custom_tooltip = tec_cui_aiuth_fragment_scientist_effect
-		custom_tooltip = tec_cui_aiauth_fragmenting_cost_effect
-		hidden_effect = {
-			from = {
+		FROM = {
+			custom_tooltip = tec_cui_aiuth_fragment_scientist_effect
+			custom_tooltip = tec_cui_aiauth_fragmenting_cost_effect
+			hidden_effect = {
 				tec_country_create_aiauth_councilor = {
 					CLASS = scientist
 					NAME = councilor_tec_aiauth_fragment_scientist

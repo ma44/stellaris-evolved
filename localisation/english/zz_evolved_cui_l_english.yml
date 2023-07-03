@@ -143,6 +143,7 @@
 	tec_loc_ai_councilor_node: "£tec_ai_councilor£ AI Councilor Node"
 	tec_loc_ai_planetary_node: "£tec_ai_planetary£ AI Planetary Node"
 	tec_loc_ai_node: "£tec_ai_node£ AI Leader Node"
+	tec_loc_ai_node_plural: "£tec_ai_node£ AI Leader Nodes"
 	tec_loc_ai_idle_node: "£tec_ai_node£ Idle AI Leader Node"
 	tec_loc_ruler: "£ruler£ Ruler"
 	tec_loc_ruler_plural: "£ruler£ Rulers"
@@ -324,12 +325,12 @@
 
 # Ai auth
 
-tec_ai_power_balance_negative: "§R[tec_ai_power_balance_value]§!"
-tec_ai_power_balance_neutral: "§Y[tec_ai_power_balance_value]§!"
-tec_ai_power_balance_positive: "§G+[tec_ai_power_balance_value]§!"
+sr_tec_ai_power_income_negative: "§R[sr_tec_ai_power_income_value]§!"
+sr_tec_ai_power_income_neutral: "§Y[sr_tec_ai_power_income_value]§!"
+sr_tec_ai_power_income_positive: "§G+[sr_tec_ai_power_income_value]§!"
 
-tec_cui_ai_power: "$tec_loc_sr_tec_ai_power$: [FROM.tec_ai_power_balance]"
-tec_cui_ai_power_effect: ""
+tec_cui_ai_power: "$tec_loc_sr_tec_ai_power$: [FROM.sr_tec_ai_power_income]"
+tec_cui_ai_power_effect: "§H$sr_tec_ai_power$§!\n$RESOURCES_STORED$§Y[sr_tec_ai_power_stockpile]§!\n$RESOURCES_GAINED$[sr_tec_ai_power_income]\n$PRODUCED$§G+[sr_tec_ai_power_revenue]§!\n$CONSUMED$§R-[sr_tec_ai_power_expenses]§!\n--------------\n$sr_tec_ai_power_desc$"
 
 tec_cui_aiuth_fragment_admiral: "£admiral£"
 tec_cui_aiuth_fragment_general: "£general£"

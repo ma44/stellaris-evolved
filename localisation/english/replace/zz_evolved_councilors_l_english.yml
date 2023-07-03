@@ -707,6 +707,8 @@
 	councilor_ruler_auth_tec_hive_biological_desc: ""
  # /
  # Other
+	councilor_tec_aiauth_desc: "The Ruler AI Node, a pinnacle of artificial intelligence, assumes the mantle of heading and controlling the state. Endowed with eternal existence and unparalleled computational prowess, it stands as the undying architect of unending progress within our empire."
+
 	councilor_tec_aiauth_development: "Main Development Program"
 	councilor_tec_aiauth_development_female: "$councilor_tec_aiauth_development$"
 	councilor_tec_aiauth_development_desc: "Filled by an AI Node, the Main Development Program drives research and expansion. Unleashing unparalleled technological advancements, they propel the empire forward through strategic growth and groundbreaking discoveries."

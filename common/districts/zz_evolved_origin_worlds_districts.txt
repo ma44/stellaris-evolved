@@ -13,8 +13,6 @@
 
 # --------------- Aquatic
 district_tec_aqua_generator = {
-	expansion_planner = yes
-
 	base_buildtime = 240
 	is_capped_by_modifier = no
 	
@@ -158,8 +156,6 @@ district_tec_aqua_generator = {
 }
 
 district_tec_aqua_mining = {
-	expansion_planner = yes
-
 	base_buildtime = 240
 	is_capped_by_modifier = no
 
@@ -319,8 +315,6 @@ district_tec_aqua_mining = {
 }
 
 district_tec_aqua_farming = {
-	expansion_planner = yes
-
 	base_buildtime = 240
 	is_capped_by_modifier = no
 	
@@ -498,8 +492,6 @@ district_tec_aqua_farming = {
 
 # TODO check and adapt with inlines
 district_tec_decadent_generator = {
-	expansion_planner = yes
-
 	base_buildtime = 240
 
 	min_for_deposits_on_planet = 3	
@@ -678,8 +670,6 @@ district_tec_decadent_generator = {
 }
 
 district_tec_decadent_mining = {
-	expansion_planner = yes
-
 	base_buildtime = 240
 	
 	min_for_deposits_on_planet = 1
@@ -926,8 +916,6 @@ district_tec_decadent_mining = {
 }
 
 district_tec_decadent_farming = {
-	expansion_planner = yes
-
 	base_buildtime = 240
 	
 	min_for_deposits_on_planet = 3	

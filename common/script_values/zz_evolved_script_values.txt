@@ -31,6 +31,12 @@ tec_variable = {
 	[[ROUND_TO]
 	round_to = $ROUND_TO$
 	]
+	[[MIN]
+		min = $MIN$
+	]
+	[[MAX]
+		min = $MAX$
+	]
 }
 
 tec_value = {
@@ -53,6 +59,12 @@ tec_value = {
 	
 	[[ROUND_TO]
 	round_to = $ROUND_TO$
+	]
+	[[MIN]
+		min = $MIN$
+	]
+	[[MAX]
+		min = $MAX$
 	]
 }
 # District counts
@@ -1201,4 +1213,134 @@ tec_councilor_level_multiplier = {
 	]
 	mult = $MULT$
 	add = 1
+}
+
+tec_resource_stockpile = {
+	complex_trigger_modifier = {
+		trigger = resource_stockpile_compare
+		parameters = {
+			resource = $RESOURCE$
+		}
+		mode = add
+	}
+	[[ADD]
+		add = $ADD$
+	]
+	[[SUBTRACT]
+		subtract = $SUBTRACT$
+	]
+	[[MULT]
+		mult = $MULT$
+	]
+	[[DIVIDE]
+		divide = $DIVIDE$
+	]
+
+	[[ROUND_TO]
+		round_to = $ROUND_TO$
+	]
+
+	[[MIN]
+		min = $MIN$
+	]
+	[[MAX]
+		min = $MAX$
+	]
+}
+
+
+tec_resource_income = {
+	complex_trigger_modifier = {
+		trigger = resource_income_compare
+		parameters = {
+			resource = $RESOURCE$
+		}
+		mode = add
+	}
+	[[ADD]
+		add = $ADD$
+	]
+	[[SUBTRACT]
+		subtract = $SUBTRACT$
+	]
+	[[MULT]
+		mult = $MULT$
+	]
+	[[DIVIDE]
+		divide = $DIVIDE$
+	]
+
+	[[ROUND_TO]
+		round_to = $ROUND_TO$
+	]
+	[[MIN]
+		min = $MIN$
+	]
+	[[MAX]
+		min = $MAX$
+	]
+}
+
+tec_resource_revenue = {
+	complex_trigger_modifier = {
+		trigger = resource_revenue_compare
+		parameters = {
+			resource = $RESOURCE$
+		}
+		mode = add
+	}
+	[[ADD]
+		add = $ADD$
+	]
+	[[SUBTRACT]
+		subtract = $SUBTRACT$
+	]
+	[[MULT]
+		mult = $MULT$
+	]
+	[[DIVIDE]
+		divide = $DIVIDE$
+	]
+
+	[[ROUND_TO]
+		round_to = $ROUND_TO$
+	]
+	[[MIN]
+		min = $MIN$
+	]
+	[[MAX]
+		min = $MAX$
+	]
+}
+
+tec_resource_expenses = {
+	complex_trigger_modifier = {
+		trigger = resource_expenses_compare
+		parameters = {
+			resource = $RESOURCE$
+		}
+		mode = add
+	}
+	[[ADD]
+		add = $ADD$
+	]
+	[[SUBTRACT]
+		subtract = $SUBTRACT$
+	]
+	[[MULT]
+		mult = $MULT$
+	]
+	[[DIVIDE]
+		divide = $DIVIDE$
+	]
+
+	[[ROUND_TO]
+		round_to = $ROUND_TO$
+	]
+	[[MIN]
+		min = $MIN$
+	]
+	[[MAX]
+		min = $MAX$
+	]
 }

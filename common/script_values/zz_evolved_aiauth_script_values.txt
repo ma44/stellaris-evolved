@@ -11,17 +11,6 @@ tec_aiauth_node_upkeep_scale = {
 	pow = trigger:has_skill
 }
 
-# scope: country
-tec_aiauth_ai_power_balance = {
-	complex_trigger_modifier = {
-		trigger = resource_income_compare
-		parameters = {
-			resource  = sr_tec_ai_power
-		}
-		mode = add
-	}
-}
-
 # node weight from modifiers, this does not include the base of 1 weight
 # scope: leader
 tec_aiauth_node_weight = {
@@ -71,7 +60,7 @@ tec_aiauth_experience_per_month = {
 	}
 	modifier = {
 		exists = owner
-		mult = owner.value:tec_aiauth_ai_power_balance
+		mult = owner.value:tec_resource_income|RESOURCE|sr_tec_ai_power|
 	}
 	min = 0
 }
